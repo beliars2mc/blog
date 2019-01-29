@@ -92,15 +92,15 @@ body {
 /* ---------------------------------------------------------- */
 
 @media (min-width: 900px) {
-    .home-template .post-feed,
+    /*.home-template .post-feed,*/
     .tag-template .post-feed,
     .author-template .post-feed {
         margin-top: -70px;
         padding-top: 0;
     }
     .home-template .site-nav {
-        position: relative;
-        top: -70px;
+        /*position: relative;*/
+        /*top: -70px;*/
     }
 }
 
@@ -113,7 +113,8 @@ body {
     padding-top: 12px;
     padding-bottom: 12px;
     color: #fff;
-    background: color(var(--darkgrey) l(-5%)) no-repeat center center;
+    /*background: color(var(--darkgrey) l(-5%)) no-repeat center center;*/
+    background: linear-gradient(to right, #CE7BFF, #5927A6);
     background-size: cover;
 }
 
@@ -230,7 +231,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     flex-shrink: 0;
     display: block;
     margin-right: 24px;
-    padding: 11px 0;
+    padding: 2px 0 0 0;
     color: #fff;
     font-size: 1.7rem;
     line-height: 1em;
@@ -244,8 +245,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .site-nav-logo img {
     display: block;
-    width: auto;
-    height: 21px;
+    width: 200px;
+    height: auto;
 }
 
 .nav {
