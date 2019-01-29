@@ -1,0 +1,22 @@
+# dependencies
+node_modules
+
+# IDE
+/.idea
+.awcache
+.vscode
+.DS_Store
+
+# misc
+npm-debug.log
+
+# logs
+content/logs
+
+# API keys and secrets
+.env
+/config.production.json
+/content/images/
+
+package-lock.json
+ghost-dev.db
