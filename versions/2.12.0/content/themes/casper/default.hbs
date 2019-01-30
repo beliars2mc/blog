@@ -26,18 +26,130 @@
         {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
         {{{body}}}
 
-        {{!-- The footer at the very bottom of the screen --}}
-        <footer class="site-footer outer">
-            <div class="site-footer-content inner">
-                <section class="copyright"><a href="{{@site.url}}">{{@site.title}}</a> &copy; {{date format="YYYY"}}</section>
-                <nav class="site-footer-nav">
-                    <a href="{{@site.url}}">Latest Posts</a>
-                    {{#if @site.facebook}}<a href="{{facebook_url @site.facebook}}" target="_blank" rel="noopener">Facebook</a>{{/if}}
-                    {{#if @site.twitter}}<a href="{{twitter_url @site.twitter}}" target="_blank" rel="noopener">Twitter</a>{{/if}}
-                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+
+      <div class="footer-wrapper">
+        <footer id="footer">
+          <div class="footer-container">
+            <div class="footer-block">
+              <div class="footer-responsive">
+
+                <div class="footer-logo">
+                  <a class="footer-logo__link" href="https://2muchcoffee.com" role="link" aria-label="2muchcoffee">
+                    <img class="footer-logo__img-logo" src="https://2muchcoffee.com/blog/content/images/footer_2mc.svg" alt="2muchcoffee">
+                  </a>
+                  <div class="footer-logo__text">Full-Stack web and mobile app development and design company.</div>
+                </div>
+
+                <div class="footer-socials">
+                  <ul class="footer-socials__list">
+                    <li class="footer-socials__item">
+                      <a class="footer-socials__link" href="https://www.facebook.com/2muchcoffeecom">
+                        <img class="footer-socials__link-item" src="https://2muchcoffee.com/blog/content/images/footer_facebook.svg" alt="facebook">
+                      </a>
+                    </li>
+                    <li class="footer-socials__item">
+                      <a class="footer-socials__link" href="https://www.linkedin.com/company/2muchcoffee">
+                        <img class="footer-socials__link-item" src="https://2muchcoffee.com/blog/content/images/footer_linkedin.svg" alt="linkedin">
+                      </a>
+                    </li>
+                    <li class="footer-socials__item">
+                      <a class="footer-socials__link" href="https://github.com/2muchcoffeecom">
+                        <img class="footer-socials__link-item" src="https://2muchcoffee.com/blog/content/images/footer_github.svg" alt="github">
+                      </a>
+                    </li>
+                    <li class="footer-socials__item">
+                      <a class="footer-socials__link" href="https://www.behance.net/2muchcoffee">
+                        <img class="footer-socials__link-item" src="https://2muchcoffee.com/blog/content/images/footer_behance.svg" alt="behance">
+                      </a>
+                    </li>
+                    <li class="footer-socials__item">
+                      <a class="footer-socials__link" href="https://twitter.com/2muchcoffeecom">
+                        <img class="footer-socials__link-item" src="https://2muchcoffee.com/blog/content/images/footer_twitter.svg" alt="twitter">
+                      </a>
+                    </li>
+                    <li class="footer-socials__item">
+                      <a class="footer-socials__link" href="https://dribbble.com/2muchcoffee">
+                        <img class="footer-socials__link-item" src="https://2muchcoffee.com/blog/content/images/footer_dribble.svg" alt="dribble">
+                      </a>
+                    </li>
+                    <li class="footer-socials__item">
+                      <a class="footer-socials__link" href="https://medium.com/@2muchcoffee">
+                        <img class="footer-socials__link-item" src="https://2muchcoffee.com/blog/content/images/footer_medium.svg" alt="medium">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <nav class="footer-nav">
+                  <ul class="footer-nav__list">
+                    <a href="https://2muchcoffee.com/services" class="footer-nav__title">Services</a>
+                    <li class="footer-nav__item">
+                      <a href="https://2muchcoffee.com/web-development" class="footer-nav__link">Web Development</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="https://2muchcoffee.com/mobile-app-development" class="footer-nav__link">App Development</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="https://2muchcoffee.com/design" class="footer-nav__link">UI/UX Design</a>
+                    </li>
+                  </ul>
+
+                  <ul class="footer-nav__list">
+                    <a href="https://2muchcoffee.com/technology" class="footer-nav__title">Technology</a>
+                    <li class="footer-nav__item">
+                      <a href="https://2muchcoffee.com/angular-web-development" class="footer-nav__link">Angular</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="https://2muchcoffee.com/react-development" class="footer-nav__link">React</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="https://2muchcoffee.com/ngxrestangular-app-development" class="footer-nav__link">Ngx-restangular</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="https://2muchcoffee.com/ionic-app-development" class="footer-nav__link">Ionic</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="https://2muchcoffee.com/firebase-app-development" class="footer-nav__link">Firebase</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="https://2muchcoffee.com/nodejs-development" class="footer-nav__link">Node.js</a>
+                    </li>
+                  </ul>
+
+                  <ul class="footer-nav__list">
+                    <a href="https://2muchcoffee.com/portfolio" class="footer-nav__title">Portfolio</a>
+                    <li class="footer-nav__item">
+                      <a href="https://2muchcoffee.com/music-app" class="footer-nav__link">Music App</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="https://2muchcoffee.com/ecommerce-saas" class="footer-nav__link">E-commerce SAAS</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a href="https://2muchcoffee.com/education-app" class="footer-nav__link">Education Platform</a>
+                    </li>
+                  </ul>
+
+                  <ul class="footer-nav__list">
+                    <a href="https://2muchcoffee.com/contacts" class="footer-nav__title">Contact us</a>
+                  </ul>
                 </nav>
+
+              </div>
+
+              <div class="footer-rights">
+                <div class="footer-rights__line">
+                  <div class="footer-rights__text footer-rights__text_margin">© Copyright 2019 2muchcoffee.</div>
+                  <div class="footer-rights__text">159 20th St, Brooklyn, NY 11232. Tel.: (347) 455-8941</div>
+                </div>
+                <div class="footer-rights__text">
+                  <a href="https://2muchcoffee.com/privacypolicy" class="footer-rights__privacy">Privacy Policy</a>
+                </div>
+              </div>
             </div>
+          </div>
         </footer>
+      </div>
+
 
     </div>
 
