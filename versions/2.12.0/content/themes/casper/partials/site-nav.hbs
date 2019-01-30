@@ -3,18 +3,29 @@
       <a class="site-nav-logo" href="{{@site.url}}"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a>
     </div>
     <div class="site-nav-right">
-        <div class="social-links">
-            {{#if @site.facebook}}
-                <a class="social-link social-link-fb" href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
-            {{/if}}
-            {{#if @site.twitter}}
-                <a class="social-link social-link-tw" href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
-            {{/if}}
-        </div>
-        {{#if @labs.subscribers}}
-            <a class="subscribe-button" href="#subscribe">Subscribe</a>
-        {{else}}
-            <a class="rss-button" href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" title="RSS" target="_blank" rel="noopener">{{> "icons/rss"}}</a>
-        {{/if}}
+      <ul class="nav-menu list">
+        <li><a class="no-ajax" href="https://2muchcoffee.com/services">Services</a></li>
+        <li><a class="no-ajax" href="https://2muchcoffee.com/technology">Technology</a></li>
+        <li><a class="no-ajax" href="https://2muchcoffee.com/portfolio">Portfolio</a></li>
+        <li><a class="no-ajax" href="https://2muchcoffee.com/company">Company</a></li>
+        <li><a class="no-ajax" href="https://2muchcoffee.com/blog">Blog</a></li>
+        <li><a class="no-ajax" href="https://2muchcoffee.com/contacts">Contact us</a></li>
+      </ul>
+      <div id="menuToggle">
+        <input type="checkbox" />
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul id="side-menu">
+          <li><a class="no-ajax" href="https://2muchcoffee.com/services">Services</a></li>
+          <li><a class="no-ajax" href="https://2muchcoffee.com/technology">Technology</a></li>
+          <li><a class="no-ajax" href="https://2muchcoffee.com/portfolio">Portfolio</a></li>
+          <li><a class="no-ajax" href="https://2muchcoffee.com/company">Company</a></li>
+          <li><a class="no-ajax" href="https://2muchcoffee.com/blog">Blog</a></li>
+          <li><a class="no-ajax" href="https://2muchcoffee.com/contacts">Contact us</a></li>
+        </ul>
+      </div>
     </div>
 </nav>
