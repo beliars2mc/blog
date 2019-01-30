@@ -108,7 +108,6 @@ body {
     padding-top: 12px;
     padding-bottom: 12px;
     color: #fff;
-    /*background: color(var(--darkgrey) l(-5%)) no-repeat center center;*/
     background: linear-gradient(to right, #CE7BFF, #5927A6);
     background-size: cover;
 }
