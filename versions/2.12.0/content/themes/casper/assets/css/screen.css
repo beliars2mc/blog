@@ -2575,7 +2575,7 @@ Usage (In Ghost editor):
 
 .md-form.search-form #search-results h2 {
     margin: 0;
-    padding: 0.5em 1em 0;
+    padding: 5px 1em 0;
 }
 
 .md-form.search-form #search-results h2 a {
@@ -2591,7 +2591,7 @@ Usage (In Ghost editor):
     margin: 0;
     font-size: 12px;
     opacity: 0.7;
-    padding-left: 24px;
+    padding: 0 0 5px 24px;
 }
 
 .md-form .form-row {
