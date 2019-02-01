@@ -33,6 +33,7 @@ production stylesheet in assets/built/screen.css
 
 body {
     background: #f4f8fb;
+    font-family: Montserrat;
 }
 
 .img {
@@ -2546,4 +2547,119 @@ Usage (In Ghost editor):
         padding-right: 0;
         padding-left: 0;
     }
+}
+
+.md-form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.md-form.search-form {
+    margin-bottom: -20px;
+    position: relative;
+}
+
+.md-form.search-form #search-results {
+    position: absolute;
+    z-index: 1000;
+    background: #f5f8fb;
+    overflow-y: auto;
+    width: 100%;
+    max-width: 1200px;
+    max-height: 500px;
+    border-radius: 5px;
+    box-shadow: 0 0 1px rgba(39, 44, 49, 0.1), 0 3px 16px rgba(39, 44, 49, 0.07);
+    top: 90px;
+}
+
+.md-form.search-form #search-results h2 {
+    margin: 0;
+    padding: 0.5em 1em 0;
+}
+
+.md-form.search-form #search-results h2 a {
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all ease-out 0.2s;
+    outline: none;
+    color: #15171a;
+}
+
+.md-form.search-form  #search-results p {
+    margin: 0;
+    font-size: 12px;
+    opacity: 0.7;
+    padding-left: 24px;
+}
+
+.md-form .form-row {
+    position: relative;
+    margin: 45px 0;
+}
+
+.md-form .form-row textarea {
+    resize: none;
+}
+
+.md-form .form-row input,
+.md-form .form-row textarea {
+    background: none;
+    color: #afafaf;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #c6c6c6;
+}
+.md-form .form-row input:focus,
+.md-form .form-row textarea:focus {
+    outline: none;
+}
+.md-form .form-row input:focus ~ label,
+.md-form .form-row input:valid ~ label,
+.md-form .form-row textarea:focus ~ label,
+.md-form .form-row textarea:valid ~ label {
+    top: -14px;
+    font-size: 12px;
+}
+.md-form .form-row input:focus ~ .bar:before,
+.md-form .form-row textarea:focus ~ .bar:before {
+    width: 100%;
+}
+
+.md-form .form-row label {
+    color: #c6c6c6;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 15px;
+    top: 10px;
+    transition: 300ms ease all;
+}
+
+.md-form .form-row .bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.md-form .form-row .icon {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+}
+
+.md-form .form-row .bar:before {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 0px;
+    position: absolute;
+    background: #8546c7;
+    transition: 300ms ease all;
+    left: 0%;
 }
